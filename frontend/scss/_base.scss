@@ -1,0 +1,25 @@
+$color-dark-blue: hsl(240, 38%, 20%);
+$color-grayish-blue: hsl(240, 18%, 77%);
+$color-white: white;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: $color-dark-blue;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pattern-curve.svg) no-repeat bottom left;
+}

@@ -1,0 +1,76 @@
+.testimonials {
+    display: flex;
+    align-items: center;
+    max-width: 128rem;
+    width: 84%;
+    height: 80%;
+    background: url(../images/pattern-quotes.svg) no-repeat 95px 164px
+                ,url(../images/pattern-bg.svg) no-repeat 500px 23px;
+    font-size: 3.2rem;
+
+    &__info {
+        width: 52%;
+        z-index: 1;
+    }
+
+    &__img {
+        position: relative;
+        right: 6rem;
+        z-index: 0;
+
+        img {
+            border-radius: 5px;
+            box-shadow: 20px 40px 50px -30px rgba($color-dark-blue, .5);
+        }
+    }
+
+    &__navigate {
+        width: 110px;
+        height: 55px;
+        border-radius: 50px;
+        background:$color-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: absolute;
+        bottom: -20px;
+        left: 65px;
+
+        &::before {
+            content: '';
+            background: url(../images/icon-prev.svg) no-repeat;
+            width: 13px;
+            height: 18px;
+        }
+
+        &::after {
+            content: '';
+            background: url(../images/icon-next.svg) no-repeat;
+            width: 13px;
+            height: 18px;
+        }
+    }
+
+    &__name {
+        margin-top: 4rem;
+        font-size: 2rem;
+        font-weight: 600;        
+    }
+
+    &__profession {
+        color: $color-grayish-blue;
+        font-weight: 500;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    font-size: 11px; text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
