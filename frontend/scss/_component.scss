@@ -1,12 +1,17 @@
-.testimonials {
+.testimonials {    
     display: flex;
-    align-items: center;
+    align-items: center;   
     max-width: 128rem;
     width: 84%;
     height: 80%;
     background: url(../images/pattern-quotes.svg) no-repeat 95px 164px
                 ,url(../images/pattern-bg.svg) no-repeat 500px 23px;
     font-size: 3.2rem;
+
+    &-item {
+        display: flex;
+        align-items: center;
+    }
 
     &__info {
         width: 52%;

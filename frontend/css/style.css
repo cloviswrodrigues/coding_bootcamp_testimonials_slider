@@ -29,6 +29,10 @@ body {
   background: url(../images/pattern-quotes.svg) no-repeat 95px 164px, url(../images/pattern-bg.svg) no-repeat 500px 23px;
   font-size: 3.2rem;
 }
+.testimonials-item {
+  display: flex;
+  align-items: center;
+}
 .testimonials__info {
   width: 52%;
   z-index: 1;
