@@ -9,9 +9,19 @@
     font-size: 3.2rem;
 
     &-item {
-        display: flex;
+        display: none;
         align-items: center;
     }
+    
+    .activate {
+        display: flex;
+        animation: slideIn 1s forwards;
+    }
+
+    .disabled {   
+        display: none;
+    }
+
 
     &__info {
         width: 52%;
@@ -92,3 +102,12 @@
     }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }   
+}
