@@ -19,6 +19,14 @@ body {
   align-items: center;
   background: url(../images/pattern-curve.svg) no-repeat bottom left;
 }
+@media screen and (max-width: 800px) {
+  body {
+    margin-top: 5rem;
+    justify-content: inherit;
+    align-items: inherit;
+    background-size: 80%;
+  }
+}
 
 .testimonials {
   display: flex;
@@ -95,10 +103,58 @@ body {
   color: hsl(240deg, 18%, 77%);
   font-weight: 500;
 }
+@media screen and (max-width: 800px) {
+  .testimonials {
+    width: 90%;
+    max-width: 360px;
+    height: 100%;
+    align-items: inherit;
+    margin: 0 auto;
+  }
+  .testimonials-item {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .testimonials__info {
+    width: 100%;
+    order: 1;
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 2.6rem;
+  }
+  .testimonials__img {
+    width: 80%;
+    right: inherit;
+    order: 0;
+  }
+  .testimonials__img img {
+    width: 100%;
+  }
+  .testimonials__navigate {
+    left: 35%;
+  }
+  .testimonials__navigate--prev {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonials__navigate--next {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonials__name {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .testimonials__profession {
+    display: block;
+  }
+}
 
 .attribution {
   position: absolute;
   bottom: 5px;
+  left: 0;
+  right: 0;
   font-size: 11px;
   text-align: center;
 }
