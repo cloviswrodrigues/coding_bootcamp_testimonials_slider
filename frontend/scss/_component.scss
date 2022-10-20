@@ -4,8 +4,6 @@
     max-width: 128rem;
     width: 84%;
     height: 80%;
-    background: url(../images/pattern-quotes.svg) no-repeat 95px 164px
-                ,url(../images/pattern-bg.svg) no-repeat 500px 23px;
     font-size: 3.2rem;
 
     &-item {
@@ -24,8 +22,20 @@
 
 
     &__info {
+        position: relative;
         width: 52%;
         z-index: 1;
+
+        &::before {
+            content: "";
+            background: url(../images/pattern-quotes.svg) no-repeat;
+            width: 120px;
+            height: 100px;
+            position: absolute;
+            z-index: -1;
+            top: 79px;
+            left: 95px;
+        }
     }
 
     &__img {
@@ -36,6 +46,17 @@
         img {
             border-radius: 5px;
             box-shadow: 20px 40px 50px -30px rgba($color-dark-blue, .5);
+        }
+
+        &::before {
+            content: "";
+            background: url(../images/pattern-bg.svg) no-repeat;
+            width: 697px;
+            height: 657px;
+            position: absolute;
+            z-index: -1;
+            top: -64px;
+            left: -65px;
         }
     }
 
@@ -97,9 +118,6 @@
         max-width: 360px;
         align-items: inherit;
         margin: 5rem auto 0 auto;
-        background: url(../images/pattern-quotes.svg) no-repeat 36vw 43vh
-                ,url(../images/pattern-bg.svg) no-repeat 0px 0px;
-        background-size: 20%;
 
         &-item {
             flex-direction: column;
@@ -112,6 +130,14 @@
             font-size: 1.9rem;
             text-align: center;
             line-height: 2.6rem;
+
+            &::before {
+                width: 120px;
+                height: 100px;
+                background-size: 50%;
+                top: -24px;
+                left: 37vw;
+            }
         }
     
         &__img {
@@ -121,6 +147,15 @@
 
             img {
                 width: 100%;
+            }
+
+            &::before {
+                width: 100vw;
+                height: 50vh;
+                max-width: 360px;
+                top: -30px;
+                left: -28px;
+                background-size: 90%;
             }
         }
 
