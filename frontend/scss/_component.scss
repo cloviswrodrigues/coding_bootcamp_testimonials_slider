@@ -95,13 +95,15 @@
     @media screen and (max-width: $break-mobile) {
         width: 90%;
         max-width: 360px;
-        height: 100%;
         align-items: inherit;
-        margin: 0 auto;
+        margin: 5rem auto 0 auto;
+        background: url(../images/pattern-quotes.svg) no-repeat 36vw 43vh
+                ,url(../images/pattern-bg.svg) no-repeat 0px 0px;
+        background-size: 20%;
 
         &-item {
             flex-direction: column;
-            gap: 5rem;
+            gap: 8rem;
         }
 
         &__info {
@@ -123,18 +125,23 @@
         }
 
         &__navigate {
-            left: 35%;
-
             $size-navigate: 40px;
+            justify-content: center;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+
 
             &--prev {            
                 width: $size-navigate;
                 height: $size-navigate;
+                background-size: 25%;
             }
     
             &--next {
                 width: $size-navigate;
                 height: $size-navigate;
+                background-size: 25%;
             }
         }
 

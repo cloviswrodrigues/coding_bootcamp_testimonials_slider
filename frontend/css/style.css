@@ -21,10 +21,9 @@ body {
 }
 @media screen and (max-width: 800px) {
   body {
-    margin-top: 5rem;
     justify-content: inherit;
     align-items: inherit;
-    background-size: 80%;
+    background-size: 100%;
   }
 }
 
@@ -107,13 +106,14 @@ body {
   .testimonials {
     width: 90%;
     max-width: 360px;
-    height: 100%;
     align-items: inherit;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
+    background: url(../images/pattern-quotes.svg) no-repeat 36vw 43vh, url(../images/pattern-bg.svg) no-repeat 0px 0px;
+    background-size: 20%;
   }
   .testimonials-item {
     flex-direction: column;
-    gap: 5rem;
+    gap: 8rem;
   }
   .testimonials__info {
     width: 100%;
@@ -131,15 +131,20 @@ body {
     width: 100%;
   }
   .testimonials__navigate {
-    left: 35%;
+    justify-content: center;
+    bottom: -10px;
+    left: 0;
+    right: 0;
   }
   .testimonials__navigate--prev {
     width: 40px;
     height: 40px;
+    background-size: 25%;
   }
   .testimonials__navigate--next {
     width: 40px;
     height: 40px;
+    background-size: 25%;
   }
   .testimonials__name {
     margin-top: 2rem;

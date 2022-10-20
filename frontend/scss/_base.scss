@@ -26,9 +26,8 @@ body {
     background: url(../images/pattern-curve.svg) no-repeat bottom left;
 
     @media screen and (max-width: $break-mobile) {
-        margin-top: 5rem;
         justify-content: inherit;
         align-items: inherit;
-        background-size: 80%;
+        background-size: 100%;
     }
 }
